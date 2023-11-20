@@ -11,12 +11,28 @@ html {
 }
 
 .main-content {
-  text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.game-description {
+  text-align: center;
 }
 
 .text-game-description {
   font-size: 2rem;
 }
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.game-button {
+  cursor: pointer;
+  font-size: x-large;
+  padding: 2rem;
+}
+
