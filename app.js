@@ -21,7 +21,7 @@ const game = () => {
   }
 
   function getPlayerChoice() {
-    let choice = prompt("Please choose rock, paper, or scissors: ");
+    //let choice = prompt("Please choose rock, paper, or scissors: ");
     console.log("Your choice is " + choice.toLowerCase());
     return choice.toLowerCase();
   }
