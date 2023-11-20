@@ -1,0 +1,41 @@
+html {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.header {
+  text-align: center;
+}
+
+.header-title {
+  font-size: 5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.game-description {
+  text-align: center;
+}
+
+.text-game-description {
+  font-size: 2rem;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10rem;
+
+  text-align: center;
+}
+
+.game-button {
+  cursor: pointer;
+  font-size: x-large;
+  padding: 2rem;
+}
