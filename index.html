@@ -19,8 +19,7 @@
       </section>
       <div class="game-container">
         <div class="game">
-          <h3>Choose one</h3>
-          <div class="game-buttons-player">
+          <div class="game-buttons">
             <button class="game-button" id="rock-button" onclick="playRock()">
               🪨 Rock
             </button>
@@ -35,7 +34,18 @@
               ✂️ Scissors
             </button>
           </div>
-          <div class="game-buttons-computer">
+          <div class="game-counter">
+            <p class="text-game-counter" id="game-counter">
+              <span class="text-player-game-wins" id="player-game-wins">
+                0
+              </span>
+              <span>-</span>
+              <span class="text-computer-game-wins" id="computer-game-wins">
+                0
+              </span>
+            </p>
+          </div>
+          <div class="game-buttons">
             <button class="game-button" id="rock-button" onclick="playRock()">
               🪨 Rock
             </button>
