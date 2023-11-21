@@ -28,6 +28,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 4rem 10rem;
   gap: 10rem;
 
@@ -45,4 +46,9 @@ html {
   cursor: pointer;
   font-size: x-large;
   padding: 2rem;
+}
+
+.text-game-counter {
+  font-size: 5rem;
+  text-align: center;
 }
