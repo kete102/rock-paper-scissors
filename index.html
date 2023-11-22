@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./index.css" />
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -20,19 +21,23 @@
       <div class="game-container">
         <div class="game">
           <div class="game-buttons">
-            <h3>Player</h3>
-            <button class="game-button" id="rock-button" onclick="playRock()">
-              🪨 Rock
-            </button>
-            <button class="game-button" id="paper-button" onclick="playPaper()">
-              📃 Paper
+            <h3 class="player-text">Player</h3>
+            <button id="player-rock-button" value="rock" class="player-option">
+              Rock
             </button>
             <button
-              class="game-button"
-              id="scissors-button"
-              onclick="playScissors()"
+              id="player-paper-button"
+              value="paper"
+              class="player-option"
             >
-              ✂️ Scissors
+              Paper
+            </button>
+            <button
+              id="player-scissors-button"
+              value="scissors"
+              class="player-option"
+            >
+              Scissors
             </button>
           </div>
           <div class="game-counter">
@@ -47,24 +52,33 @@
             </p>
           </div>
           <div class="game-buttons">
-            <h3>Computer</h3>
-            <button class="game-button" id="rock-button" onclick="playRock()">
-              🪨 Rock
-            </button>
-            <button class="game-button" id="paper-button" onclick="playPaper()">
-              📃 Paper
-            </button>
-            <button
-              class="game-button"
-              id="scissors-button"
-              onclick="playScissors()"
-            >
-              ✂️ Scissors
-            </button>
+            <h3 class="player-text">Computer</h3>
+            <div class="game-buttons">
+              <button
+                id="computer-rock-button"
+                class="opcion-computer"
+                disabled
+              >
+                Rock
+              </button>
+              <button
+                id="computer-paper-button"
+                class="opcion-computer"
+                disabled
+              >
+                Paper
+              </button>
+              <button
+                id="computer-scissors-button"
+                class="opcion-computer"
+                disabled
+              >
+                Scissors
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="./app.js"></script>
   </body>
 </html>
