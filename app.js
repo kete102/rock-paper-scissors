@@ -66,15 +66,15 @@ const game = () => {
   });
 
   function playRound(playerChoice, computerChoice) {
-    console.log("Computer's choice is " + computerChoice);
-    console.log("Player's choice is " + playerChoice);
+    //console.log("Computer's choice is " + computerChoice);
+    //console.log("Player's choice is " + playerChoice);
 
     if (
       (playerChoice === "rock" && computerChoice === "scissors") ||
       (playerChoice === "paper" && computerChoice === "rock") ||
       (playerChoice === "scissors" && computerChoice === "paper")
     ) {
-      console.log("Player wins this round!");
+      //console.log("Player wins this round!");
       playerWins++;
       playerWinsScoreboard.textContent = playerWins;
     } else if (
@@ -82,17 +82,19 @@ const game = () => {
       (playerChoice === "rock" && computerChoice === "paper") ||
       (playerChoice === "paper" && computerChoice === "scissors")
     ) {
-      console.log("Computer wins this round!");
+      //console.log("Computer wins this round!");
       computerWins++;
       computerWinsScoreboard.textContent = computerWins;
     } else {
-      console.log("It's a tie!");
+      //console.log("It's a tie!");
     }
 
     if (playerWins === 5) {
-      console.log("Player wins the game!");
+      //console.log("Player wins the game!");
+      return;
     } else if (computerWins === 5) {
-      console.log("Computer wins the game!");
+      //console.log("Computer wins the game!");
+      return;
     }
   }
 };

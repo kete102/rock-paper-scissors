@@ -29,7 +29,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 4rem 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   gap: 10rem;
 
   text-align: center;
@@ -51,4 +52,16 @@ html {
 .text-game-counter {
   font-size: 5rem;
   text-align: center;
+}
+
+.player-text {
+  font-size: 2rem;
+}
+
+.computer-button-selected {
+  background-color: aqua;
+}
+
+.player-button-selected {
+  background-color: chartreuse;
 }
