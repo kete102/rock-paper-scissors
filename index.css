@@ -65,3 +65,40 @@ html {
 .player-button-selected {
   background-color: chartreuse;
 }
+
+.winner-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 60%; /* Cambia el ancho del modal según tu preferencia */
+  max-width: 400px; /* Define el ancho máximo del modal */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.restart-game-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.restart-game-button:hover,
+.restart-game-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

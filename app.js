@@ -12,7 +12,7 @@ const computerPaperButton = document.getElementById("computer-paper-button");
 const computerScissorsButton = document.getElementById(
   "computer-scissors-button"
 );
-
+const computerButtons = document.querySelectorAll(".computer-option");
 //Scoreboard
 const playerWinsScoreboard = document.getElementById("player-game-wins");
 const computerWinsScoreboard = document.getElementById("computer-game-wins");
@@ -91,12 +91,55 @@ const game = () => {
 
     if (playerWins === 5) {
       //console.log("Player wins the game!");
+      endGame("player");
       return;
     } else if (computerWins === 5) {
       //console.log("Computer wins the game!");
+      endGame("computer");
       return;
     }
   }
+
+  function endGame(winner) {
+    //disable buttons
+
+    playerButtons.forEach((button) => {
+      button.disabled = true;
+    });
+
+    showModal(winner);
+  }
+
+  //Modal
+  const modal = document.getElementById("winner-modal");
+  const restartButton = document.getElementById("restart-game-button");
+  const modalWinnerText = document.getElementById("modal-winner-text");
+
+  function showModal(winner) {
+    modal.style.display = "block";
+    modalWinnerText.innerHTML = "Winner: " + winner;
+  }
+
+  restartButton.addEventListener("click", function () {
+    // Quitar el modal
+    modal.style.display = "none";
+
+    // Limpiar variables
+    playerWins = 0;
+    computerWins = 0;
+
+    playerWinsScoreboard.textContent = playerWins;
+    computerWinsScoreboard.textContent = computerWins;
+
+    playerButtons.forEach((button) => {
+      button.disabled = false;
+      button.classList.remove("player-button-selected");
+    });
+
+    computerButtons.forEach((button) => {
+      button.classList.remove("computer-button-selected");
+    });
+  });
 };
 
 game();
